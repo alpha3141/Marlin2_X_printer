@@ -197,6 +197,7 @@
 #if HAS_SSD1306_OLED_I2C
   #define IS_ULTRA_LCD
   #define DOGLCD
+  #define IS_ULTIPANEL
 #endif
 
 // ST7920-based graphical displays

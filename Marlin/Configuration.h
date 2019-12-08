@@ -1633,7 +1633,7 @@
  *
  * Use CRC checks and retries on the SD communication.
  */
-//#define SD_CHECK_AND_RETRY
+#define SD_CHECK_AND_RETRY
 
 /**
  * LCD Menu Items
@@ -2155,7 +2155,7 @@
 #define NEOPIXEL_LED
 #if ENABLED(NEOPIXEL_LED)
   #define NEOPIXEL_TYPE   NEO_GRB // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
-  #define NEOPIXEL_PIN     15       // LED driving pin
+  #define NEOPIXEL_PIN     5       // LED driving pin
   //#define NEOPIXEL2_TYPE NEOPIXEL_TYPE
   //#define NEOPIXEL2_PIN    5
   #define NEOPIXEL_PIXELS 11       // Number of LEDs in the strip, larger of 2 strips if 2 neopixel strips are used

@@ -399,7 +399,7 @@
  * Multiple extruders can be assigned to the same pin in which case
  * the fan will turn on when any selected extruder is above the threshold.
  */
-#define E0_AUTO_FAN_PIN 9
+#define E0_AUTO_FAN_PIN 70
 #define E1_AUTO_FAN_PIN 6
 #define E2_AUTO_FAN_PIN -1
 #define E3_AUTO_FAN_PIN -1
@@ -413,7 +413,7 @@
 #define CHAMBER_AUTO_FAN_SPEED 255
 
 /**
- * Part-Cooling Fan Multiplexer
+ * Part-Cooling yMultiplexer
  *
  * This feature allows you to digitally multiplex the fan output.
  * The multiplexer is automatically switched at tool-change.

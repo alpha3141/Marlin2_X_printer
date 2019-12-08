@@ -68,7 +68,7 @@
     #define Z_STOP_PIN     11   // Y-MIN
     #define SERVO0_PIN     10   // Z-MIN
   #else
-    #define Z_STOP_PIN     10
+    #define Z_STOP_PIN     11
   #endif
 
 #endif
@@ -128,14 +128,14 @@
 // Misc. Functions
 //
 #define SDSS               77
-#define LED_PIN            13
-#define CASE_LIGHT_PIN      9
+#define LED_PIN            5
+#define CASE_LIGHT_PIN      5
 
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
 // use P1 connector for spindle pins
-#define SPINDLE_LASER_PWM_PIN     9   // Hardware PWM
+#define SPINDLE_LASER_PWM_PIN     0   // Hardware PWM
 #define SPINDLE_LASER_ENA_PIN    18   // Pullup!
 #define SPINDLE_DIR_PIN          19
 
@@ -156,11 +156,11 @@
   #if ENABLED(ULTIPANEL) || TOUCH_UI_ULTIPANEL
 
     #if ENABLED(CR10_STOCKDISPLAY)
-      #define LCD_PINS_RS     85
-      #define LCD_PINS_ENABLE 71
-      #define LCD_PINS_D4     70
-      #define BTN_EN1         61
-      #define BTN_EN2         59
+      //#define LCD_PINS_RS     85
+      //#define LCD_PINS_ENABLE 71
+      //#define LCD_PINS_D4     70
+      //#define BTN_EN1         61
+      //#define BTN_EN2         59
     #else
       #define LCD_PINS_RS     82
       #define LCD_PINS_ENABLE 61
@@ -172,7 +172,7 @@
       #define BTN_EN2         72
     #endif
 
-    #define BTN_ENC            9   // AUX-2
+    #define BTN_ENC           9   // AUX-2
     #define BEEPER_PIN        84   // AUX-4
     #define SD_DETECT_PIN     15
 

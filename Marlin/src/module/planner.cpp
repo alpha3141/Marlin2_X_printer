@@ -112,8 +112,8 @@
 float GenZ(float zcoor, int axis_steps_per_mm) {
 
   float t;
-  t = 62.26;
-  float c = 245.9744;
+  t = 62.8;
+  float c = 246.0696;
   float q;
   q = t + zcoor - Z_MIN_POS + home_offset[c];
   if (zcoor > 0) {
@@ -1669,7 +1669,7 @@ bool Planner::_populate_block(block_t * const block, bool split_move,
   , feedRate_t fr_mm_s, const uint8_t extruder, const float &millimeters/*=0.0*/
 ) {
 
-  const int32_t da = target.a - position.a,
+   const int32_t da = target.a - position.a,
                 db = target.b - position.b,
                 dc = target.c - position.c;
 
